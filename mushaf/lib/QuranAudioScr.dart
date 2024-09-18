@@ -195,9 +195,18 @@ class _QuranAudioState extends State<QuranAudio> {
                       child: CircleAvatar(
                                 radius: 100,
                                 backgroundColor: Color.fromARGB(255, 0, 63, 118),
-                                backgroundImage: NetworkImage(
+                                // backgroundImage:AssetImage("images/alaffasy.png")
+                                
+                             backgroundImage:     NetworkImage(
                                     'https://2.bp.blogspot.com/-RLU-DkUOWHA/ViKoDh2NjcI/AAAAAAAAFZY/hIybzxypiXQ/s1600/ALAFASY.png',
-                                    scale: 1)),
+                                    scale: 1)
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    )
+                                    ,
                     ),
                           SizedBox(
                             height: 20,

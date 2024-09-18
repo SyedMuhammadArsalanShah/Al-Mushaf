@@ -4,7 +4,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:mushaf/QuranAudioScr.dart';
+import 'package:mushaf/QuranJuzScr.dart';
 import 'package:mushaf/QuranReadScr.dart';
+import 'package:mushaf/QuranTranslationScr.dart';
 
 void main() {
   runApp(const MyApp());
@@ -101,7 +103,7 @@ class _TabsScrState extends State<TabsScr> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 4,
       child: Scaffold(
           appBar: AppBar(
             title: Text(
@@ -124,13 +126,25 @@ class _TabsScrState extends State<TabsScr> {
                 Tab(
                   text: "Recitation",
                 ),
+
+                Tab(
+                  text: "Translation",
+                ),
+                 Tab(
+                  text: "Juz Quran",
+                ),
               ],
             ),
           ),
           body: TabBarView(children: [
             QuranReadScr(),
             QuranAudioScr(),
+            QuranTranslationScr(),
+            QuranJuzScr()
           ])),
     );
   }
 }
+
+
+
